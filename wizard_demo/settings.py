@@ -39,7 +39,15 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_extensions",
     "core",
+    "formtools",
+    "crispy_forms",
+    "crispy_bootstrap5",  # Opcional, se quiser usar Bootstrap 5
 ]
+
+
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
